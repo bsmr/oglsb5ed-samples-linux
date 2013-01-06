@@ -4,7 +4,7 @@
 #ifndef __SBMVIEWER__
 #define __SBMVIEWER__
 
-#include <gltools.h>
+#include <GLTools.h>
 #include <GLFrustum.h>
 #include <GLBatch.h>
 #include <GLMatrixStack.h>

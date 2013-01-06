@@ -1,7 +1,4 @@
 #include "sbm.h"
-
-#include <gltools.h>
-
 #include <stdio.h>
 
 SBObject::SBObject(void)

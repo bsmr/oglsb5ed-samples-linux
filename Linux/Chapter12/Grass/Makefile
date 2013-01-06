@@ -7,7 +7,7 @@ INCDIRS = -I/usr/include -I/usr/local/include -I/usr/include/GL -I$(SHAREDINCPAT
 
 CC = g++
 CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS)
-LIBS = -lX11 -lfreeglut-2.6 -lglut -lGL -lGLU -lm
+LIBS = -lX11 -lglut -lGL -lGLU -lm
 
 prog : $(MAIN)
 

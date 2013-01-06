@@ -4,3 +4,5 @@
 
 # c/c++ files
 *.o
+compile.log
+

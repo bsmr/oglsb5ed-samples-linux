@@ -2,8 +2,9 @@ MAIN = fbo_drawbuffers
 SRCPATH = ../../../Src/Chapter08/$(MAIN)/
 SHAREDPATH = ../../../Src/GLTools/src/
 SHAREDINCPATH = ../../../Src/GLTools/include/
+NINJAPATH	= ../../../Src/Models/Ninja
 LIBDIRS = -L/usr/X11R6/lib -L/usr/X11R6/lib64 -L/usr/local/lib
-INCDIRS = -I/usr/include -I/usr/local/include -I/usr/include/GL -I$(SHAREDINCPATH)  -I$(SHAREDINCPATH)GL -I"../../../Src/Models/Ninja"
+INCDIRS = -I/usr/include -I/usr/local/include -I/usr/include/GL -I$(SHAREDINCPATH)  -I$(SHAREDINCPATH)GL -I$(NINJAPATH)
 
 CC = g++
 CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS)
@@ -20,7 +21,7 @@ GLShaderManager.o    : $(SHAREDPATH)GLShaderManager.cpp
 math3d.o    : $(SHAREDPATH)math3d.cpp
 
 $(MAIN) : $(MAIN).o glew.o
-	$(CC) $(CFLAGS) -o $(MAIN) $(LIBDIRS) $(SRCPATH)$(MAIN).cpp $(SHAREDPATH)glew.c $(SHAREDPATH)GLTools.cpp $(SHAREDPATH)GLBatch.cpp $(SHAREDPATH)GLTriangleBatch.cpp $(SHAREDPATH)GLShaderManager.cpp $(SHAREDPATH)math3d.cpp $(LIBS)
+	$(CC) $(CFLAGS) -o $(MAIN) $(LIBDIRS) $(SRCPATH)$(MAIN).cpp $(SHAREDPATH)glew.c $(SHAREDPATH)GLTools.cpp $(SHAREDPATH)GLBatch.cpp $(SHAREDPATH)GLTriangleBatch.cpp $(SHAREDPATH)GLShaderManager.cpp $(SHAREDPATH)math3d.cpp $(NINJAPATH)/sbm.cpp $(LIBS)
 
 clean:
 	rm -f *.o

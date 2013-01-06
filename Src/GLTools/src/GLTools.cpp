@@ -1252,7 +1252,8 @@ GLuint gltLoadShaderTripletWithAttributes(const char *szVertexShader,
     if(testVal == GL_FALSE) {
         char infoLog[1024];
         glGetProgramInfoLog(hReturn, 1024, NULL, infoLog);
-        fprintf(stderr, infoLog);
+        //fprintf(stderr, infoLog);
+        fprintf(stderr, "%s", infoLog);
         goto failed;
     }
 
