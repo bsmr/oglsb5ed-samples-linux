@@ -1,10 +1,9 @@
-OpenGL SuperBible 4th Edition - Samples - Linux Version
+OpenGL SuperBible 5th Edition - Samples - Linux Version
 =======================================================
 
-This repository is based on
-http://code.google.com/p/oglsuperbible5/
+This repository is based on: http://code.google.com/p/oglsuperbible5/
 
-But it will be updated and "optimized" for Linux.
+But it is updated and "optimized" for Linux (currently tested with Ubuntu 12.04 LTS).
 
 Prerequisites:
 
